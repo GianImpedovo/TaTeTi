@@ -26,18 +26,18 @@ function iniciar() {
 
     casilleros.forEach((casilleros) => {
         casilleros.addEventListener("click", e => {
-        mensaje.style.display = "none";
-        contador++;
-        let casilla = e.target;
-        if ( casilla.innerText.length == 0 ){
-            if ( turno % 2 == 0 ){
-                item = CRUZ
-                casilla.innerText = item;
-            } else {
-                item = CIRCULO
-                casilla.innerText = item;
-                } 
-            turno++;
+            mensaje.style.display = "none";
+            contador++;
+            let casilla = e.target;
+            if ( casilla.innerText.length == 0 ){
+                if ( turno % 2 == 0 ){
+                    item = CRUZ
+                    casilla.innerText = item;
+                } else {
+                    item = CIRCULO
+                    casilla.innerText = item;
+                    } 
+                turno++;
             
 
         } else {
